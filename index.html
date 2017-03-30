@@ -7,8 +7,8 @@ address: "GeoLab, A27 (Großer Refraktor), Albert-Einstein Wissenschaftspark, Te
 country: "de"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "52.3798284, 13.0641701"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
-humandate: "May 17-18 2017"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "09:00 am - 18:00 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+humandate: "May 17-18, 2017"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "9:00 am - 18:00"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2017-05-17      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2017-05-18        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Martin Hammitzsch (GFZ)", "Stefan Lüdtke (GFZ)", "Marvin Reich (GFZ)", "Till Francke (UP)", "Berry Boessenkool (UP)", "Peter Evans (GFZ)"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
@@ -58,10 +58,11 @@ and the administrator will contact you if we need any extra information.</h4>
   the pitch.
 -->
 <p>
-  This workshop is an <strong>R-Novice Workshop</strong> with a focus on its scientific usage.
-  Everyone who already has some experience (even if minimal) in programming with R is invited
-  to <strong>join for getting in touch with tools and structures for accomplishing scientific code with a high-quality,
-  reproducible and well-documented standard</strong>.
+  This workshop is an <strong>R-Workshop</strong> with a focus on scientific
+  computing. Everyone with solid basic knowledge of R or similar scripting language
+  is invited to <strong>join for getting in touch with tools and structures for
+    accomplishing scientific code with a high-quality, reproducible and
+    well-documented standard</strong>.
 </p>
 <p>
   <a href="{{site.swc_site}}">Software Carpentry</a>
@@ -91,8 +92,8 @@ and the administrator will contact you if we need any extra information.</h4>
   <strong>Who:</strong>
   The course is aimed at scientists and researchers who are interested in extending their skills
   in data processing and some basis to advanced techniques in "how to write good scientific code"
-  and how to deal with this in abroader context.
-  <strong>You need to have some previous knowledge of R, even if minimal, to benefit from the workshop and follow its course.</strong>
+  and how to deal with this in a broader context.
+  <strong>Solid basic knowledge of R or similar scripting language is required. We start the workshop with a R-wrap-up to get everyone on board.</strong>
 </p>
 
 <!--
@@ -132,7 +133,7 @@ and the administrator will contact you if we need any extra information.</h4>
 <p id="requirements">
   <strong>Requirements:</strong> Participants are highly encouraged to usw the provided IT-infrastructure (computer).
   This is a Linux system. Please note that the content taught can be used and easiliy be transfered later on to other operating systems.
-  If you implicitely want to use your own laptop, we cannot garantee you fully support.
+  If you implicitly want to use your own laptop, we cannot guarantee full support.
   An installation routine (also only for Linux) will be provided in advance, so you can install the required software.
   Specific software packages required are listed
   <a href="#setup">below</a>. They are also required to abide by
@@ -223,13 +224,13 @@ and the administrator will contact you if we need any extra information.</h4>
     <h3>Day 2</h3>
     <table class="table table-striped">
       <tr> <td>09:00</td>  <td>Arrival & coffee</td> </tr>
-      <tr> <td>09:30</td> <td>Functions and testing</td> </tr>
+      <tr> <td>09:30</td> <td>Functions and Unittests</td> </tr>
       <tr> <td>11:00</td>  <td>Coffee</td> </tr>
-      <tr> <td>11:30</td>  <td>Code optimization (Vektorisierung, profiling, parallelisierung)</td> </tr>
+      <tr> <td>11:30</td>  <td>Code optimization (Vectorization, profiling, parallelization)</td> </tr>
       <tr> <td>13:00</td>  <td>Lunch</td> </tr>
       <tr> <td>14:00</td>  <td>Debugging und Packages</td> </tr>
       <tr> <td>15:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Plotting with ggplot (factors, dplyr)</td> </tr>
+      <tr> <td>16:00</td>  <td>Tidyverse and ggplot</td> </tr>
       <tr> <td>17:30</td>  <td>Wrap-up</td> </tr>
     </table>
   </div>
@@ -284,21 +285,19 @@ and the administrator will contact you if we need any extra information.</h4>
       <li><a href="{{site.swc_pages}}/shell-novice/reference/">Reference...</a></li>
     </ul>
   </div>
-    <!--
   <div class="col-md-6">
-    <h3 id="syllabus-python">Programming in Python</h3>
+    <h3 id="syllabus-git">Version Control with Git</h3>
     <ul>
-      <li>Using libraries</li>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Defensive programming</li>
-      <li>Using Python from the command line</li>
-      <li><a href="{{site.swc_pages}}/python-novice-inflammation/reference/">Reference...</a></li>
+      <li>Creating a repository</li>
+      <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
+      <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
+      <li>Ignoring files</li>
+      <li>Resolving conflicts</li>
+      <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
+      <li>Where to host work, and why</li>
+      <li><a href="{{site.swc_pages}}/git-novice/reference/">Reference...</a></li>
     </ul>
   </div>
-  -->
   <div class="col-md-6">
     <h3 id="syllabus-r">Programming in R</h3>
     <ul>
@@ -307,56 +306,9 @@ and the administrator will contact you if we need any extra information.</h4>
       <li>How can you optimize your code and what do you have to do for that?</li>
       <li>Debugging</li>
       <li>Writing your own R-package</li>
-      <li>Plotting with ggplot2</li>
-     <!-- <li><a href="{{site.swc_pages}}/r-novice-inflammation/reference/">Reference...</a></li> -->
+      <li>The tidyverse and ggplot2</li>
     </ul>
   </div>
-  <!--
-  <div class="col-md-6">
-    <h3 id="syllabus-matlab">Programming in MATLAB</h3>
-    <ul>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Defensive programming</li>
-      <li><a href="{{site.swc_pages}}/matlab-novice-inflammation/reference/">Reference...</a></li>
-     </ul>
-   </div>
-   -->
-</div>
-
-<div class="row">
-  <div class="col-md-6">
-    <h3 id="syllabus-git">Version Control with Git</h3>
-    <ul>
-      <li>Creating a repository</li>
-      <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
-      <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
-      <li>Ignoring files</li>
-      <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
-      <li>Resolving conflicts</li>
-      <li>Open licenses</li>
-      <li>Where to host work, and why</li>
-      <li><a href="{{site.swc_pages}}/git-novice/reference/">Reference...</a></li>
-    </ul>
-  </div>
-  <!--
-  <div class="col-md-6">
-    <h3 id="syllabus-sql">Managing Data with SQL</h3>
-    <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="{{site.swc_pages}}/sql-novice-survey/reference/">Reference...</a></li>
-    </ul>
-  </div>
-     -->
 </div>
 
 <hr/>
