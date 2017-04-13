@@ -682,12 +682,13 @@ and the administrator will contact you if we need any extra information.</h4>
         run <code>sudo apt-get install r-base</code> and for Fedora run
         <code>sudo yum install R</code>).  Also, please install the
         <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>. 
-        To get the latest R version, use:
-        <code>sudo echo "deb http://cran.rstudio.com/bin/linux/ubuntu xenial/" | sudo tee -a /etc/apt/sources.list
-        gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9
-        gpg -a --export E084DAB9 | sudo apt-key add -
-        sudo apt-get update
-        sudo apt-get install r-base r-base-dev</code>
+        To get the latest R version on Ubuntu, use:<br>
+        
+        <code>sudo echo "deb http://cran.rstudio.com/bin/linux/ubuntu xenial/" | sudo tee -a /etc/apt/sources.list<br>
+        gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9<br>
+        gpg -a --export E084DAB9 | sudo apt-key add -<br>
+        sudo apt-get update<br>
+        sudo apt-get install r-base r-base-dev</code><br>
         Replace xenial with e.g. trusty if you have another Ubuntu version:
         Ubuntu 16.10 yakkety, 16.04 xenial, 14.04 trusty, 12.04 precise
       </p>
